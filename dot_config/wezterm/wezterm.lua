@@ -15,6 +15,7 @@ config.font_size = 12
 config.keys = {
 
 }
+config.window_background_opacity = 1.0
 
 -- and finally, return the configuration to wezterm
 return config
