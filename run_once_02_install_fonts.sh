@@ -1,5 +1,6 @@
 #!/bin/sh
 
+mkdir ${HOME}/.fonts
 cd Downloads
-unzip "*.zip" "*.ttf" "*.otf" -d ${HOME}/.fonts
+cp *.ttf -d ${HOME}/.fonts
 sudo fc-cache -f -v
