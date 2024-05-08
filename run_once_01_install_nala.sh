@@ -1,4 +1,7 @@
 #!/bin/sh
 
-sudo apt install nala curl
+# install nala package manager
+sudo apt install nala
+
+# fetch the fastest mirrors to use 
 sudo nala fetch

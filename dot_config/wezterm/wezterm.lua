@@ -8,7 +8,7 @@ local config = wezterm.config_builder()
 config.color_scheme = 'nord'
 
 -- Set the font to use in the terminal
-config.font = wezterm.font 'MonoLisa SlashedZero'
+config.font = wezterm.font 'MonoLisa'
 config.font_size = 12
 
 -- Custom Key Bindings
