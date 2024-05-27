@@ -18,12 +18,6 @@ wget -O ToDoist.AppImage https://todoist.com/linux_app/appimage
 chmod +x *.AppImage
 ./ToDoist.AppImage
 
-# upnote
-cd ~/Downloads
-wget -O UpNote.AppImage https://upnote.sfo3.cdn.digitaloceanspaces.com/UpNote.AppImage
-chmod +x *.AppImage
-./UpNote.AppImage
-
 # dotnet
 cd ~/Downloads
 wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
@@ -51,6 +45,10 @@ sudo mv /opt/nvim-linux64 /opt/nvim
 
 # thunderbird
 sudo nala install thunderbird
+
+# system 76 drivers
+sudo apt install system76-driver
+sudo apt install system76-driver-nvidia
 
 # lazy git
 cd ${HOME}/Downloads
