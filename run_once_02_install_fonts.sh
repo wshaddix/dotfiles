@@ -1,6 +1,6 @@
 #!/bin/sh
 
 mkdir ${HOME}/.fonts
-cd Downloads
+cd fonts
 cp *.ttf -d ${HOME}/.fonts
 sudo fc-cache -f -v
