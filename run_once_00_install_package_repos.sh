@@ -25,5 +25,8 @@ sudo add-apt-repository ppa:appimagelauncher-team/stable
 wget -qO - https://typoraio.cn/linux/public-key.asc | sudo tee /etc/apt/trusted.gpg.d/typora.asc
 sudo add-apt-repository 'deb https://typora.io/linux ./'
 
+# system 76 drivers
+sudo apt-add-repository -y ppa:system76-dev/stable
+
 # update the repository list
 sudo apt-get update
