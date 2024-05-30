@@ -1,16 +1,16 @@
 #!/bin/sh
 
 # wezterm
-sudo nala install wezterm
+sudo nala install wezterm -y
 
 # brave browser
-sudo nala install brave-browser
+sudo nala install brave-browser -y
 
 # 1password
-sudo nala install 1password
+sudo nala install 1password -y
 
 # appimage launcher
-sudo nala install software-properties-common appimagelauncher
+sudo nala install software-properties-common appimagelauncher -y
 
 # todoist
 cd ~/Downloads
@@ -44,11 +44,11 @@ sudo tar -xzf ./Downloads/nvim-linux64.tar.gz -C /opt
 sudo mv /opt/nvim-linux64 /opt/nvim
 
 # thunderbird
-sudo nala install thunderbird
+sudo nala install thunderbird -y
 
 # system 76 drivers
-sudo apt install system76-driver
-sudo apt install system76-driver-nvidia
+sudo apt install system76-driver -y
+sudo apt install system76-driver-nvidia -y
 
 # lazy git
 cd ${HOME}/Downloads
@@ -59,4 +59,4 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 
 # typora
-sudo apt-get install typora
+sudo apt-get install typora -y
