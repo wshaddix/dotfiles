@@ -60,3 +60,6 @@ sudo install lazygit /usr/local/bin
 
 # typora
 sudo nala install typora -y
+
+# sublime text
+sudo nala install sublime-text -y
