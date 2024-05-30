@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt install curl 
+sudo apt install curl -y
 
 # wezterm
 curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
