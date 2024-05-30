@@ -60,6 +60,3 @@ sudo install lazygit /usr/local/bin
 
 # typora
 sudo nala install typora -y
-
-# pulse audio control
-sudo nala install pavucontrol -y
