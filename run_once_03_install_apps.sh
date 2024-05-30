@@ -47,8 +47,8 @@ sudo mv /opt/nvim-linux64 /opt/nvim
 sudo nala install thunderbird -y
 
 # system 76 drivers
-sudo apt install system76-driver -y
-sudo apt install system76-driver-nvidia -y
+sudo nala install system76-driver -y
+sudo nala install system76-driver-nvidia -y
 
 # lazy git
 cd ${HOME}/Downloads
@@ -59,4 +59,7 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 
 # typora
-sudo apt-get install typora -y
+sudo nala install typora -y
+
+# pulse audio control
+sudo nala install pavucontrol -y
