@@ -1,3 +1,2 @@
-require("initial-settings")
-
-require("lazy-package-manager")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
