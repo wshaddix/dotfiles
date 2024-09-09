@@ -47,8 +47,8 @@ sudo mv /opt/nvim-linux64 /opt/nvim
 #sudo nala install thunderbird -y
 
 # system 76 drivers
-sudo nala install system76-driver -y
-sudo nala install system76-driver-nvidia -y
+#sudo nala install system76-driver -y
+#sudo nala install system76-driver-nvidia -y
 
 # lazy git
 cd ${HOME}/Downloads
@@ -66,3 +66,21 @@ sudo nala install sublime-text -y
 
 # starship
 curl -sS https://starship.rs/install.sh | sh
+
+# vscode
+
+# jetbrains rider
+
+# obsidian
+
+# beyond compare
+
+# netpad
+
+# mailspring
+
+# virtualbox
+
+# newsflash rss reader
+
+# signal
