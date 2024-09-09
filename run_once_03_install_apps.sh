@@ -44,7 +44,7 @@ sudo tar -xzf ./Downloads/nvim-linux64.tar.gz -C /opt
 sudo mv /opt/nvim-linux64 /opt/nvim
 
 # thunderbird
-sudo nala install thunderbird -y
+#sudo nala install thunderbird -y
 
 # system 76 drivers
 sudo nala install system76-driver -y
@@ -63,3 +63,6 @@ sudo nala install typora -y
 
 # sublime text
 sudo nala install sublime-text -y
+
+# starship
+curl -sS https://starship.rs/install.sh | sh
