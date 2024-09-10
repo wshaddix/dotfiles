@@ -1,7 +1,7 @@
 #!/bin/sh
 
-mkdir ${HOME}/.fonts
+mkdir ~/.fonts
 cd ./fonts
-cp *.ttf -d ${HOME}/.fonts
-cd ${HOME}/.fonts
+cp *.ttf -d ~/.fonts
+cd ~/.fonts
 sudo fc-cache -f -v
