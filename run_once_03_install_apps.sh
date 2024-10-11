@@ -25,7 +25,7 @@ chmod +x ./dotnet-install.sh
 ./dotnet-install.sh --version latest
 
 # neovim
-sudo nala install git ripgrep fd-find build-essential make fzf
+sudo nala install git ripgrep fd-find build-essential make fzf -y
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 export NVM_DIR="$HOME/.nvm"
@@ -47,8 +47,8 @@ sudo mv /opt/nvim-linux64 /opt/nvim
 #sudo nala install thunderbird -y
 
 # system 76 drivers
-#sudo nala install system76-driver -y
-#sudo nala install system76-driver-nvidia -y
+sudo nala install system76-driver -y
+sudo nala install system76-driver-nvidia -y
 
 # lazy git
 cd ${HOME}/Downloads
@@ -76,8 +76,6 @@ curl -sS https://starship.rs/install.sh | sh
 # beyond compare
 
 # netpad
-
-# mailspring
 
 # virtualbox
 

@@ -1,6 +1,5 @@
-#Installation
+# Installation
 
 ```bash
 sh -c "$(wget -qO- get.chezmoi.io)" -- init --apply wshaddix
 ```
-
