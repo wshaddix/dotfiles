@@ -26,7 +26,7 @@ wget -qO - https://typoraio.cn/linux/public-key.asc | sudo tee /etc/apt/trusted.
 sudo add-apt-repository 'deb https://typora.io/linux ./'
 
 # system 76 drivers
-sudo apt-add-repository -y ppa:system76-dev/stable
+# sudo apt-add-repository -y ppa:system76-dev/stable
 
 # sublime text
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
