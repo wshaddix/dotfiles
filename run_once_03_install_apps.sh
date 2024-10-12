@@ -47,8 +47,8 @@ sudo mv /opt/nvim-linux64 /opt/nvim
 #sudo nala install thunderbird -y
 
 # system 76 drivers
-sudo nala install system76-driver -y
-sudo nala install system76-driver-nvidia -y
+# sudo nala install system76-driver -y
+# sudo nala install system76-driver-nvidia -y
 
 # lazy git
 cd ${HOME}/Downloads
