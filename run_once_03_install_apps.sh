@@ -62,7 +62,7 @@ sudo install lazygit /usr/local/bin
 sudo nala install typora -y
 
 # sublime text
-sudo nala install sublime-text -y
+# sudo nala install sublime-text -y
 
 # starship
 curl -sS https://starship.rs/install.sh | sh
