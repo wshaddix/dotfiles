@@ -15,8 +15,7 @@ sudo nala install software-properties-common appimagelauncher -y
 # todoist
 cd ~/Downloads
 wget -O ToDoist.AppImage https://todoist.com/linux_app/appimage
-chmod +x *.AppImage
-./ToDoist.AppImage
+flatpak run it.mijorus.gearlever
 
 # dotnet
 cd ~/Downloads

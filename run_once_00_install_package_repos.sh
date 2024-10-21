@@ -18,8 +18,8 @@ curl -sS https://downloads.1password.com/linux/debian/debsig/1password.pol | sud
 sudo mkdir -p /usr/share/debsig/keyrings/AC2D62742012EA22
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/debsig/keyrings/AC2D62742012EA22/debsig.gpg
 
-# appimage launcher
-sudo add-apt-repository ppa:appimagelauncher-team/stable
+# gear lever (appimage manager)
+flatpak install flathub it.mijorus.gearlever -y
 
 # typora 
 wget -qO - https://typoraio.cn/linux/public-key.asc | sudo tee /etc/apt/trusted.gpg.d/typora.asc
