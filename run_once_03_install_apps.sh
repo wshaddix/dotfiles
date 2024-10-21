@@ -43,9 +43,6 @@ sudo rm -rf /opt/nvim
 sudo tar -xzf ./Downloads/nvim-linux64.tar.gz -C /opt
 sudo mv /opt/nvim-linux64 /opt/nvim
 
-# thunderbird
-#sudo nala install thunderbird -y
-
 # system 76 drivers
 # sudo nala install system76-driver -y
 # sudo nala install system76-driver-nvidia -y
@@ -61,17 +58,22 @@ sudo install lazygit /usr/local/bin
 # typora
 sudo nala install typora -y
 
-# sublime text
-# sudo nala install sublime-text -y
-
 # starship
 curl -sS https://starship.rs/install.sh | sh
 
 # vscode
+wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+sudo nala install ./vscode.deb
 
-# jetbrains rider
+# jetbrains toolbox
+wget -O jetbrains-toolbox.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.4.2.32922.tar.gz
+mkdir ~/.Applications/jetbrains-toolbox
+tar -xzf jetbrains-toolbox.tar.gz -C /Applications/jetbrains-toolbox
 
 # obsidian
+cd ~/Downloads
+wget -O obsidian.deb https://github.com/obsidianmd/obsidian-releases/releases/download/v1.7.4/obsidian_1.7.4_amd64.deb
+sudo nala install ./obsidian.deb
 
 # beyond compare
 
@@ -80,5 +82,7 @@ curl -sS https://starship.rs/install.sh | sh
 # virtualbox
 
 # newsflash rss reader
+flatpak install flathub io.gitlab.news_flash.NewsFlash -y
+flatpak run io.gitlab.news_flash.NewsFlash
 
 # signal

@@ -1,7 +1,4 @@
 #!/bin/sh
 
-mkdir ~/.fonts
-cd ./fonts
-cp *.ttf -d ~/.fonts
-cd ~/.fonts
+cd /home/wshaddix/.fonts
 sudo fc-cache -f -v
