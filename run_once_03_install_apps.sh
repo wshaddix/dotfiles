@@ -12,7 +12,7 @@ sudo nala install 1password -y
 # todoist
 cd ~/Downloads
 wget -O ToDoist.AppImage https://todoist.com/linux_app/appimage
-flatpak run it.mijorus.gearlever
+flatpak run it.mijorus.gearlever &
 
 # dotnet
 cd ~/Downloads
@@ -59,17 +59,17 @@ curl -sS https://starship.rs/install.sh | sh
 
 # vscode
 wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
-sudo nala install ./vscode.deb
+sudo nala install ./vscode.deb -y
 
 # jetbrains toolbox
 wget -O jetbrains-toolbox.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.4.2.32922.tar.gz
-mkdir ~/Applications/jetbrains-toolbox
-tar -xzf jetbrains-toolbox.tar.gz -C /Applications/jetbrains-toolbox
+mkdir /home/wshaddix/Applications/jetbrains-toolbox
+tar -xzf jetbrains-toolbox.tar.gz -C /home/wshaddix/Applications/jetbrains-toolbox
 
 # obsidian
 cd ~/Downloads
 wget -O obsidian.deb https://github.com/obsidianmd/obsidian-releases/releases/download/v1.7.4/obsidian_1.7.4_amd64.deb
-sudo nala install ./obsidian.deb
+sudo nala install ./obsidian.deb -y
 
 # beyond compare
 
@@ -79,6 +79,6 @@ sudo nala install ./obsidian.deb
 
 # newsflash rss reader
 flatpak install flathub io.gitlab.news_flash.NewsFlash -y
-flatpak run io.gitlab.news_flash.NewsFlash
+flatpak run io.gitlab.news_flash.NewsFlash &
 
 # signal
