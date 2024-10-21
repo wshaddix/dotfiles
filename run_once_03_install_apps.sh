@@ -9,9 +9,6 @@ sudo nala install brave-browser -y
 # 1password
 sudo nala install 1password -y
 
-# appimage launcher
-sudo nala install software-properties-common appimagelauncher -y
-
 # todoist
 cd ~/Downloads
 wget -O ToDoist.AppImage https://todoist.com/linux_app/appimage
@@ -66,7 +63,7 @@ sudo nala install ./vscode.deb
 
 # jetbrains toolbox
 wget -O jetbrains-toolbox.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.4.2.32922.tar.gz
-mkdir ~/.Applications/jetbrains-toolbox
+mkdir ~/Applications/jetbrains-toolbox
 tar -xzf jetbrains-toolbox.tar.gz -C /Applications/jetbrains-toolbox
 
 # obsidian
