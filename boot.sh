@@ -22,12 +22,16 @@ git clone --depth 1 https://github.com/wshaddix/dotfiles.git ~/.local/share/wsha
 
 echo "Installation starting..."
 
-echo "Installing Ghostty terminal"
-cd ~/Downloads
-GHOSTTY_URL="https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.1.3-0-ppa2/ghostty_1.1.3-0.ppa2_amd64_25.04.deb"
-curl -sLo ghostty.deb "${GHOSTTY_URL}"
-sudo apt-get install -y ./ghostty.deb
-rm ~/Downloads/ghostty.deb
+if command -v ghostty >/dev/null 2>&1; then
+    echo "Ghostty terminal is already installed"
+else
+    echo "Installing Ghostty terminal"
+    cd ~/Downloads
+    GHOSTTY_URL="https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.1.3-0-ppa2/ghostty_1.1.3-0.ppa2_amd64_25.04.deb"
+    curl -sLo ghostty.deb "${GHOSTTY_URL}"
+    sudo apt-get install -y ./ghostty.deb
+    rm ~/Downloads/ghostty.deb
+fi
 
 echo "Installing Brave browser"
 if [ -f "/etc/apt/sources.list.d/brave-browser-release.list" ]; then
