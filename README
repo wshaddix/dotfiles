@@ -1,5 +1,5 @@
 # Installation
 
 ```bash
-sh -c "$(wget -qO- get.chezmoi.io)" -- init --apply wshaddix
+eval "$(wget -qO- https://raw.githubusercontent.com/wshaddix/dotfiles/refs/heads/main/boot.sh)"
 ```
