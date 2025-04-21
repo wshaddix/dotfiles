@@ -84,7 +84,7 @@ if command_exists nvim; then
 else
 	echo "Installing Nvim"
 	cd ~/Downloads
-	sudo apt install -y luarocks tree-sitter-cli >/dev/null
+	sudo apt install -y luarocks tree-sitter-cli ripgrep fd-find build-essential make fzf >/dev/null
 
 	curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 	sudo rm -rf /opt/nvim
