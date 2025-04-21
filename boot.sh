@@ -21,4 +21,4 @@ echo -e "\nCloning Github repo..."
 git clone --depth 1 https://github.com/wshaddix/dotfiles.git ~/.local/share/wshaddix-ubuntu >/dev/null
 
 echo "Installation starting..."
-source ~/.local/share/wshaddix-ubuntu/install.sh"
+source ~/.local/share/wshaddix-ubuntu/install.sh
