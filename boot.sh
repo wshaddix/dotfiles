@@ -27,4 +27,15 @@ cd ~/Downloads
 GHOSTTY_URL="https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.1.3-0-ppa2/ghostty_1.1.3-0.ppa2_amd64_25.04.deb"
 curl -sLo ghostty.deb "${GHOSTTY_URL}"
 sudo apt-get install -y ./ghostty.deb
+rm ~/Downloads/ghostty.deb
 
+echo "Installing Brave browser"
+if [ -f "/etc/apt/sources.list.d/brave-browser-release.list" ]; then
+    echo "Brave keyring and package source already added so skipping..."
+else
+    echo "Adding Brave keyring and package source"
+    sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+    echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+fi
+
+sudo apt-get install brave-browser -y
