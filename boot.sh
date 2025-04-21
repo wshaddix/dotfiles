@@ -11,8 +11,12 @@ sudo apt-get update >/dev/null
 echo -e "\nInstalling any available updates..."
 sudo apt-get upgrade -y >/dev/null
 
-echo -e "\nInstalling git..."
-sudo apt-get install -y git >/dev/null
+if command -v git >/dev/null 2>&1; then
+    echo "git is already installed"
+else
+    echo "Installing git"
+    sudo apt-get install -y git >/dev/null
+fi
 
 echo -e "\nRemoving any previous files from a prior installation..."
 rm -rf ~/.local/share/wshaddix-ubuntu
