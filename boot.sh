@@ -18,7 +18,7 @@ echo -e "\nRemoving any previous files from a prior installation..."
 rm -rf ~/.local/share/wshaddix-ubuntu
 
 echo -e "\nCloning Github repo..."
-git clone https://github.com/wshaddix/dotfiles.git ~/.local/share/wshaddix-ubuntu >/dev/null
+git clone --depth 1 https://github.com/wshaddix/dotfiles.git ~/.local/share/wshaddix-ubuntu >/dev/null
 
 echo "Installation starting..."
 source ~/.local/share/wshaddix-ubuntu/install.sh"
