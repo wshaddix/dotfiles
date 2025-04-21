@@ -1,5 +1,5 @@
 # immediately exit if any command exits with a non-zero status
-set -e
+# set -e
 
 # prompt the user that we're beginning
 echo -e "\nBegining installation (abort with ctrl+c)..."
