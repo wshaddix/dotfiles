@@ -21,10 +21,10 @@ else
 fi
 
 echo "Removing any previous files from a prior installation..."
-# rm -rf ~/.local/share/wshaddix-ubuntu
+rm -rf ~/.local/share/wshaddix-ubuntu
 
 echo "Cloning Github repo..."
-# git clone --depth 1 https://github.com/wshaddix/dotfiles.git ~/.local/share/wshaddix-ubuntu >/dev/null
+git clone --depth 1 https://github.com/wshaddix/dotfiles.git ~/.local/share/wshaddix-ubuntu >/dev/null
 
 echo "Installation starting..."
 
